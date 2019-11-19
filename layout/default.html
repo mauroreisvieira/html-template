@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{global.language}}">
+<head>
+    {% include layout.head.html %}
+</head>
+<body>
+    {% if navigation %}
+        <header>
+            {% yield navigation %}
+        </header>
+    {% endif %}
+
+    <main>
+        {% yield content %}
+    </main>
+
+    <footer>
+        {% include layout.footer.html %}
+    </footer>
+</body>
+</html>
